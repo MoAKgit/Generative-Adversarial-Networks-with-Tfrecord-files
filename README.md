@@ -4,11 +4,11 @@
 This is a tensorflow implementation of GAN with tfrecord files. 
 To use the code first install following requirments packages:
 
->tensorflow-gpu
->glob
->os
->pillow
->matplotlib
+- tensorflow-gpu
+- glob
+- os
+- pillow
+- matplotlib
 
 
 Download the flower dataset from the link below:
