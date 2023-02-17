@@ -15,15 +15,9 @@ Download the flower dataset from the link below:
 https://www.tensorflow.org/datasets/catalog/tf_flowers
 and collect the five classes (daisy, dandelion, roses, sunflowers, tulips) in one folder.
 
-
 Use the file 'Convert_jpg_to_tfrecord.py' to convert all images to a trfecord file named 'flower.trfecord'.
 
-
-Copy the flowers.tfrecord to the directory of 'tfrecord files'.
-
-
 Run the gan_tfrecord.py to start training the GAN model using the tfrecord file.
-
 
 Notice that, tensorboard has been provided in the code for further analysis.
 
