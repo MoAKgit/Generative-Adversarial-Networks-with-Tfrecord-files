@@ -40,10 +40,14 @@ Here are some generated images:
 ![My Image](flower2.png) 
 
 ## Notice: 
-The tensorboard has been provided in the code for further analysis. To access the tensrboard:
-1: cd to your directory
-2: Run python -m tensorboard.main --logdir=logs/
-3: Copy the http://localhost:6006/ in your internet browser.
+The tensorboard has been provided in the code for further analysis. To access the tensrboard:  
+
+1: cd to your directory  
+
+2: Run python -m tensorboard.main --logdir=logs/  
+
+3: Copy the http://localhost:6006/ in your internet browser.  
+
 
 
 
