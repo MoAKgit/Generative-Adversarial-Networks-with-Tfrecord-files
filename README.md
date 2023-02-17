@@ -19,7 +19,6 @@ Use the file 'Convert_jpg_to_tfrecord.py' to convert all images to a trfecord fi
 
 Run the gan_tfrecord.py to start training the GAN model using the tfrecord file.
 
-Notice that, tensorboard has been provided in the code for further analysis.
 
 The trained weights are saved in the directory 'saved_model/'
 
@@ -39,5 +38,14 @@ Here are some generated images:
 
 ![My Image](flower1.png)  
 ![My Image](flower2.png) 
+
+## Notice: 
+The tensorboard has been provided in the code for further analysis. To access the tensrboard:
+1: cd to your directory
+2: Run python -m tensorboard.main --logdir=logs/
+3: Copy the http://localhost:6006/ in your internet browser.
+
+
+
 
 
