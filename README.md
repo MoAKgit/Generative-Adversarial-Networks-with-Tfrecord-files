@@ -1,10 +1,10 @@
 
 # Generative Adversarial Networks with Tfrecord files
 
-This is a tensorflow implementation of GAN with tfrecord files. 
-To use the code first install following requirments packages:
+This is a TensorFlow implementation of GAN with tfrecord files. 
+To begin with, the code, install the following requirements packages:
 
-- tensorflow-gpu
+- TensorFlow-gpu
 - glob
 - os
 - pillow
@@ -22,9 +22,9 @@ Run the gan_tfrecord.py to start training the GAN model using the tfrecord file.
 
 The trained weights are saved in the directory 'saved_model/'
 
-For the sake of the time, I just uploaded the tf record file in the directory of 'tfrecord files'
+For the sake of time, I just uploaded the tf record file in the directory of 'tfrecord files'
 
-The number of epochs and learning rate are set to 200 and 0.0005 , respectively.
+The number of epochs and the learning rate is set to 200 and 0.0005, respectively.
 
 I printed out the details of the Generator and discriminator as follows:
 
@@ -33,7 +33,7 @@ I printed out the details of the Generator and discriminator as follows:
 ![My Image](D.PNG)  
 
 
-For testing the model, change the defualt of the 'mode' in the arguments to 'test' and run the 'gan_tfrecord.py' agian. In this time, the code will automatically load the pretrained weights of genrator and then generate random flowers.
+For testing the model, change the default of the 'mode' in the arguments to 'test' and run the 'gan_tfrecord.py' again. At this time, the code will automatically load the pre-trained weights of the genrator and then generate random flowers.
 Here are some generated images:
 
 ![My Image](flower1.png)  
@@ -47,9 +47,5 @@ The tensorboard has been provided in the code for further analysis. To access th
 2: Run python -m tensorboard.main --logdir=logs/  
 
 3: Copy the http://localhost:6006/ in your internet browser.  
-
-
-
-
 
 
