@@ -33,6 +33,7 @@ Learning rate: 0.0005
 
 ## Model Details
 Below are the details of the Generator and Discriminator architectures:
+
 ![My Image](G.PNG)  
 
 ![My Image](D.PNG)  
