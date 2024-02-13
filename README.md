@@ -1,51 +1,58 @@
 
 # Generative Adversarial Networks with Tfrecord files
 
-This is a TensorFlow implementation of GAN with tfrecord files. 
-To begin with, the code, install the following requirements packages:
+This repository contains a TensorFlow implementation of GANs with tfrecord files for training image generation models.
+
+## Requirements
+To use this code, make sure you have the following packages installed:
+
 
 - TensorFlow-gpu
 - glob
 - os
 - pillow
 - matplotlib
+## Dataset 
 
+Download the flower dataset from the TensorFlow Datasets [website](https://www.tensorflow.org/datasets/catalog/tf_flowers). Organize the dataset by collecting the images of five classes (daisy, dandelion, roses, sunflowers, tulips) into one folder.
 
-Download the flower dataset from the link below:
-https://www.tensorflow.org/datasets/catalog/tf_flowers
-and collect the five classes (daisy, dandelion, roses, sunflowers, tulips) in one folder.
+Run the script 'Convert_jpg_to_tfrecord.py' to convert the images into a tfrecord file named 'flower.trfecord'.
 
-Use the file 'Convert_jpg_to_tfrecord.py' to convert all images to a trfecord file named 'flower.trfecord'.
+## Train
 
-Run the gan_tfrecord.py to start training the GAN model using the tfrecord file.
+To train the GAN model using the tfrecord file, execute the 'script gan_tfrecord.py'.
 
+The trained weights will be saved in the 'saved_model/' directory.
 
-The trained weights are saved in the directory 'saved_model/'
+## Directory Structure
+For convenience, the tfrecord file is provided in the 'tfrecord files/' directory.
 
-For the sake of time, I just uploaded the tf record file in the directory of 'tfrecord files'
+## Training Details
+Number of epochs: 200
+Learning rate: 0.0005
 
-The number of epochs and the learning rate is set to 200 and 0.0005, respectively.
-
-I printed out the details of the Generator and discriminator as follows:
-
+## Model Details
+Below are the details of the Generator and Discriminator architectures:
 ![My Image](G.PNG)  
 
 ![My Image](D.PNG)  
 
+## Testing
+To test the trained model, set the mode argument to 'test' in the script gan_tfrecord.py, then execute the script again. The code will automatically load the pre-trained weights of the generator and generate random flower images.
 
-For testing the model, change the default of the 'mode' in the arguments to 'test' and run the 'gan_tfrecord.py' again. At this time, the code will automatically load the pre-trained weights of the genrator and then generate random flowers.
 Here are some generated images:
 
 ![My Image](flower1.png)  
 ![My Image](flower2.png) 
 
-## Notice: 
-The tensorboard has been provided in the code for further analysis. To access the tensrboard:  
+## Tensorboard
+Tensorboard has been integrated into the code for further analysis. To access Tensorboard:
 
-1: cd to your directory  
+1: Navigate to your project directory.
 
 2: Run python -m tensorboard.main --logdir=logs/  
 
 3: Copy the http://localhost:6006/ in your internet browser.  
 
+Feel free to explore and modify the code as needed. Happy training!
 
